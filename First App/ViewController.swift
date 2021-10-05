@@ -32,7 +32,10 @@ class ViewController: UIViewController {
         
     }
     
-    tobegan
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.textField.resignFirstResponder()
+        
+    }
     
 }
 
