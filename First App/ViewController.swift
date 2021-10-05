@@ -9,11 +9,30 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var testLabel: UILabel!
+    
+    @IBOutlet weak var textField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+//        testLabel.text = "Ahmed "
+        
+        textField.becomeFirstResponder()
+        
+        
     }
 
-
+    
+    @IBAction func buttonPressed(_ sender: Any) {
+//        testLabel.text = "Ahmed "
+        testLabel.text = "Hello \(textField.text!)"
+        
+        
+    }
+    
+    tobegan
+    
 }
 
